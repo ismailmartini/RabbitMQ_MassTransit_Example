@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RabbitMQ.ESB.MassTransit.RequestResponsePattern.Consumer.Consumer
 {
-    public class ReqeustMessageConsumer : IConsumer<RequestMessage>
+    public class RequestMessageConsumer : IConsumer<RequestMessage>
     {
         public async Task Consume(ConsumeContext<RequestMessage> context)
         {

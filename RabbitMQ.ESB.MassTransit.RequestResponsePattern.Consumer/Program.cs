@@ -15,7 +15,7 @@ IBusControl bus = Bus.Factory.CreateUsingRabbitMq(factory =>
 
     factory.ReceiveEndpoint(requestQueue, endpoint =>
     {
-        endpoint.Consumer<ReqeustMessageConsumer>();
+        endpoint.Consumer<RequestMessageConsumer>();
     });
 });
 
